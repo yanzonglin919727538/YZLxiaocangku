@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML盒子模型</title>
+    <style>
+        div
+        {
+            float :left ;
+            /* 边框四是四个方向都有的值 solid =>实线 dashed=>虚线; */
+            border: 1px dashed #ccc;
+            /* 往里面撑大它 */
+            /* 内间距：上 右 下 左 */
+            /* padding:20px 10px 30px 40px; */
+            /* 上下   左右 */
+            padding: 20px 10px;
+
+            /* 外边距：上 右 下 左 */
+            /* margin: 10px 20px 30px 40px; */
+            /* 上下  左右 */
+            /* margin:20px 40px; */
+
+            /* 四个方向单独用 */
+            margin-top: 100px;
+            margin-right: 50px;
+            margin-bottom: 200px;
+            margin-left: 50px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 把网页的内容全部堪称单独的一块 -->
+    <!-- division 单词的缩写，分块，盒子的意思 -->
+    <!-- div【块标签】 独占一行 -->
+    
+    <div>
+        111
+    </div>
+    <div>
+        111
+    </div>
+    <div>
+        111
+    </div>
+
+    <span>111</span>
+    <span>111</span>
+    <span>111</span>
+
+</body>
+</html>

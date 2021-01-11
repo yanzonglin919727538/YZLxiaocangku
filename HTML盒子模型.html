@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下</title>
+    <style>
+        /* 全局样式 =》 全部人都听我的 星号：全部，所有 */
+        *
+        {
+            /* 外边距给我消除 */
+            margin: 0;
+            /* 内边距消除 */
+            padding: 0;
+        }
+        .topBox
+        {
+            /* 宽度 */
+            width: 100%;
+            height: 60px;
+            /* 边框，看个效果 =》 最后需要删除 */
+            border: 1px solid #000;
+
+        }
+
+        /* 有嵌套关系时，要这么写，方便阅读代码 */
+        .topBox .leftBox
+        {
+            float: left;
+        }
+
+        .topBox .leftBox .navBox
+        {
+            /* ul元素的左边有一个24的内间距 */
+            padding-left: 24px;
+        }
+
+        .topBox .leftBox .navBox li
+        {
+            float: left;
+            /* 删除小黑点 */
+            list-style: none;
+            /* 居中 */
+            line-height: 60px;
+            /* 右边距31 */
+            margin-left: 31px;
+
+        }
+
+        .topBox .leftBox .navBox li a
+        {
+            /* 删除下划线 */
+            text-decoration: none;
+            /* 颜色 */
+            color: #000;
+            /* 字体大小修改 */
+            font-size: 13px;
+
+
+        }
+
+        .topBox .leftBox .navBox li a:hover
+        {
+            color: blue;
+        }
+
+
+        .topBox .rightBox
+        {
+            float: right;
+        }
+        .topBox .rightBox .rightNavBox li
+        {
+            /* 消除小黑点 */
+            list-style: none;
+            /* 向右排队 */
+            float: left;
+            /* 行高 */
+            line-height: 60px;
+            margin-right: 31px;
+        
+        }
+        .topBox .rightBox .rightNavBox li a
+        {
+            /* 去掉下划线 */
+            text-decoration: none;
+            /* 字体颜色 */
+            color: #000;
+            /* 字体大小修改 */
+            font-size: 13px;
+        }
+        .topBox .rightBox .rightNavBox li a:hover
+        {
+            color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 大盒子包住里面的东西 -->
+    <div class="topBox">
+        <!-- 左边盒子 -->
+        <div class="leftBox">
+            <ul class="navBox">
+                <li><a href="">新闻</a></li>
+                <li><a href="">hao123</a></li>
+                <li><a href="">地图</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">贴吧</a></li>
+                <li><a href="">学术</a></li>
+                <li><a href="">更多</a></li>
+                
+            </ul>
+        </div>
+        <!-- 右边盒子 -->
+        <div class="rightBox">
+            <ul class="rightNavBox">
+                <li><a href="">南宁</a></li>
+                <li><a href="">22℃</a></li>
+                <li><a href="">设置</a></li>
+                <li><a href="">
+                    <img src="" alt="" class="imgBox">
+                    风萧萧2112
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
